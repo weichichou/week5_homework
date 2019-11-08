@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sequelize": "^5.8.6"
+    "sequelize": "^5.15.1"
   }
 }
