@@ -1,13 +1,13 @@
 const express = require('express')
-const Movie = require('./movie/model')
+const { db } = require('./db')
 const bodyParser = require('body-parser')
 const movieRouter = require('./movie/router')
 
 const app = express()
 
-Movie
+db
     .sync()
-    .catch((error) => console.log(error))
+    .catch((error) => console.error(error))
 
 app.use(bodyParser.json())
 app.use(movieRouter)

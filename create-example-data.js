@@ -1,4 +1,4 @@
-const Movie = require('./movie/model')
+const { Movie } = require('./db')
 
 Movie
     .sync({ force: true })
@@ -19,4 +19,4 @@ Movie
                 synopsis: 'An artificial man, who was incompletely constructed and has scissors for hands, leads a solitary life. Then one day, a suburban lady meets him and introduces him to her world.'
             })
     })
-    .catch(console.error)
+    .catch((error) => console.error(error))

@@ -1,4 +1,4 @@
-const Movie = require('./model')
+const { Movie } = require('../db')
 const { Router } = require('express')
 const router = new Router
 
@@ -14,7 +14,7 @@ router.post('/movies', (req, res, next)=>{
 router.get('/movies', (req, res, next)=>{
     Movie
         .findAll()
-        .then(list=>res.status(200).send(list))
+        .then(list => res.status(200).send(list))
         .catch(next)
 })
 
