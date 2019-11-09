@@ -5,6 +5,7 @@ const movieRouter = require('./movie/router')
 
 const app = express()
 
+// To create example data, please run `npm run create-example-data` first :)
 db
     .sync()
     .catch((error) => console.error(error))
