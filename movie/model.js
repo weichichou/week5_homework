@@ -6,7 +6,7 @@ const Movie = db.define(
     {
         title: Sequelize.TEXT,
         yearOfRelease: Sequelize.INTEGER,
-        synopsis: Sequelize.TEXT
+        synopsis: Sequelize.TEXT,
     }
 )
 

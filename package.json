@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "create-example-data": "node createExampleData.js",
+    "create-example-data": "node create-example-data.js",
     "start": "node sequelize-rest.js",
     "start-dev-server": "nodemon sequelize-rest.js",
     "test": "echo \"Error: no test specified\" && exit 1"

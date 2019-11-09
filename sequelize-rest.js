@@ -1,11 +1,15 @@
 const express = require('express')
+const Movie = require('./movie/model')
+const bodyParser = require('body-parser')
+const movieRouter = require('./movie/router')
 
 const app = express()
 
-const bodyParser = require('body-parser')
-app.use(bodyParser.json())
+Movie
+    .sync()
+    .catch((error) => console.log(error))
 
-const movieRouter = require('./movie/router')
+app.use(bodyParser.json())
 app.use(movieRouter)
 
 const port = 4000
