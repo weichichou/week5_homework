@@ -9,5 +9,5 @@ const Movie = db.define(
         synopsis: Sequelize.TEXT
     }
 )
-console.log('movei in models', Movie)
+
 module.exports = Movie
