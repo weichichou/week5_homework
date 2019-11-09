@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "create-example-data": "node createExampleData.js",
+    "start": "node sequelize-rest.js",
+    "start-dev-server": "nodemon sequelize-rest.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
     "pg": "^7.12.1",
     "sequelize": "^5.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
   }
 }
